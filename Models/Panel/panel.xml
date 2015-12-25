@@ -140,7 +140,7 @@
     </offsets>
   </model>
         <model>
-    <path>Instruments/switch/alternator.xml</path>
+    <path>Instruments/switch/avionics.xml</path>
     <offsets>
       <y-m>-0.38</y-m>
       <z-m>-0.132</z-m>
