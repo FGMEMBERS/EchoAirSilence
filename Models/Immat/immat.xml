@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>immat.ac</path>
+
+  <animation>
+    <!-- Immatriculations -->
+    <object-name>ImatFuselageL1</object-name>
+    <object-name>ImatFuselageL2</object-name>
+    <object-name>ImatFuselageL3</object-name>
+    <object-name>ImatFuselageL4</object-name>
+    <object-name>ImatFuselageL5</object-name>
+    <object-name>ImatFuselageL6</object-name>
+    <object-name>ImatFuselageR1</object-name>
+    <object-name>ImatFuselageR2</object-name>
+    <object-name>ImatFuselageR3</object-name>
+    <object-name>ImatFuselageR4</object-name>
+    <object-name>ImatFuselageR5</object-name>
+    <object-name>ImatFuselageR6</object-name>
+    <!--
+    <object-name>ImatWingR1</object-name>
+    <object-name>ImatWingR2</object-name>
+    <object-name>ImatWingR3</object-name>
+    <object-name>ImatWingR4</object-name>
+    <object-name>ImatWingR5</object-name>
+    <object-name>ImatWingR6</object-name>
+    -->
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>ImatFuselageL1</object-name>
+    <object-name>ImatFuselageL2</object-name>
+    <object-name>ImatFuselageL3</object-name>
+    <object-name>ImatFuselageL4</object-name>
+    <object-name>ImatFuselageL5</object-name>
+    <object-name>ImatFuselageL6</object-name>
+    <object-name>ImatFuselageR1</object-name>
+    <object-name>ImatFuselageR2</object-name>
+    <object-name>ImatFuselageR3</object-name>
+    <object-name>ImatFuselageR4</object-name>
+    <object-name>ImatFuselageR5</object-name>
+    <object-name>ImatFuselageR6</object-name>
+    <!--
+    <object-name>ImatWingR1</object-name>
+    <object-name>ImatWingR2</object-name>
+    <object-name>ImatWingR3</object-name>
+    <object-name>ImatWingR4</object-name>
+    <object-name>ImatWingR5</object-name>
+    <object-name>ImatWingR6</object-name>
+    -->
+  </animation>
+
+  <!-- Ne me demandez pas comment j'ai obtenu la formule du facteur, ce fut au feeling ;) -->
+  <!--
+       Largeur de l'image complète : 2048 pixels
+       Largeur d'un caractère      :   50 pixels
+       Nombre de cases             : 2048/50 = 40.96
+       factor                      : 1/40.96 = 0.0244140625
+  -->
+  <!-- Immatriculation gauche -->
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <!-- Immatriculation droite -->
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <!-- Immatriculation dessus aile droite
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatWingR1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatWingR2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatWingR3-0</object-name>
+    <object-name>ImatWingR3-1</object-name>
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatWingR4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatWingR5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatWingR6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation> -->
+
+  <!-- Right
+  <animation>
+    <type>rotate</type>
+    <object-name>ImatWingR1</object-name>
+    <object-name>ImatWingR2</object-name>
+    <object-name>ImatWingR3-0</object-name>
+    <object-name>ImatWingR3-1</object-name>
+    <object-name>ImatWingR4</object-name>
+    <object-name>ImatWingR5</object-name>
+    <object-name>ImatWingR6</object-name>
+    <property>sim/multiplay/generic/float[12]</property>
+    <interpolation>
+      <entry><ind> 0.000 </ind><dep>  1 </dep></entry>
+      <entry><ind> 0.333 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1.000 </ind><dep> -1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -0.04293 </x1-m>
+      <y1-m>  0.32873 </y1-m>
+      <z1-m> -0.42119 </z1-m>
+      <x2-m> -1.59232 </x2-m>
+      <y2-m>  0.32873 </y2-m>
+      <z2-m> -0.35174 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>ImatWingR1</object-name>
+    <object-name>ImatWingR2</object-name>
+    <object-name>ImatWingR3-0</object-name>
+    <object-name>ImatWingR3-1</object-name>
+    <object-name>ImatWingR4</object-name>
+    <object-name>ImatWingR5</object-name>
+    <object-name>ImatWingR6</object-name>
+    <property>sim/multiplay/generic/float[12]</property>
+    <interpolation>
+      <entry><ind> 0.000 </ind><dep>  1.5 </dep></entry>
+      <entry><ind> 0.333 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.000 </ind><dep> -1.5 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -0.33016 </x1-m>
+      <y1-m>  2.62636 </y1-m>
+      <z1-m> -0.25948 </z1-m>
+      <x2-m> -1.58594 </x2-m>
+      <y2-m>  2.62636 </y2-m>
+      <z2-m> -0.20388 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>ImatWingR3-1</object-name>
+    <object-name>ImatWingR4</object-name>
+    <object-name>ImatWingR5</object-name>
+    <object-name>ImatWingR6</object-name>
+    <property>sim/multiplay/generic/float[12]</property>
+    <interpolation>
+      <entry><ind> 0.000 </ind><dep>  2 </dep></entry>
+      <entry><ind> 0.333 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1.000 </ind><dep> -2 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -0.64893 </x1-m>
+      <y1-m>  5.17629 </y1-m>
+      <z1-m> -0.08000 </z1-m>
+      <x2-m> -1.57885 </x2-m>
+      <y2-m>  5.17629 </y2-m>
+      <z2-m> -0.03972 </z2-m>
+    </axis>
+  </animation> -->
+  
+</PropertyList>
