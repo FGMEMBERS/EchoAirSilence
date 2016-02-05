@@ -244,22 +244,5 @@
 <z-m>0.0</z-m>
 </center>
 </animation>
-<!--Checklists-->
-<animation>
-<type>pick</type>
-    <object-name>checklists</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>  
-      <binding>
-        <command>property-toggle</command>
-        <property>/sim/model/checklists</property>
-      </binding>
-        <binding>
-          <command>dialog-show</command>
-          <dialog-name>checklist</dialog-name>
-        </binding>
-    </action>
-</animation>
 
 </PropertyList>

@@ -7,7 +7,7 @@
     
     <crank>
       <name>engstart</name>
-      <path>engstart.wav</path>
+      <path>Sounds/engstart.wav</path>
       <property>/engines/engine[0]/cranking</property>
       <volume>
         <offset>0.4</offset>
@@ -17,7 +17,7 @@
     <crank>
       <name>crank</name>
       <mode>looped</mode>
-      <path>cranking.wav</path>
+      <path>Sounds/cranking.wav</path>
       <condition>
         <property>/engines/engine[0]/cranking</property>
         <not>
@@ -31,7 +31,7 @@
     
     <crank>
       <name>cough</name>
-      <path>coughing.wav</path>
+      <path>Sounds/coughing.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume>
         <offset>0.3</offset>
@@ -41,7 +41,7 @@
     <engine>
       <name>engine</name>
       <mode>looped</mode>
-      <path>wasp.wav</path>
+      <path>Sounds/wasp.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume>
         <property>/engines/engine[0]/mp-osi</property>
@@ -72,7 +72,7 @@
     <propeller>
       <name>propeller</name>
       <mode>looped</mode>
-      <path>turboprop1.wav</path>
+      <path>Sounds/turboprop1.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume>
         <property>/orientation/alpha-deg</property>
@@ -196,7 +196,7 @@
     
     <click> 
       <name>Magnetos-off</name>
-      <path>click.wav</path>
+      <path>Sounds/click.wav</path>
       <condition>
         <not>
           <property>controls/engines/engine[0]/magnetos</property>
@@ -209,7 +209,7 @@
     
     <click> 
       <name>Magnetos-R</name>
-      <path>click.wav</path>
+      <path>Sounds/click.wav</path>
       <condition>
         <equals>
           <property>controls/engines/engine[0]/magnetos</property>
@@ -223,7 +223,7 @@
     
     <click> 
       <name>Magnetos-L</name>
-      <path>click.wav</path>
+      <path>Sounds/click.wav</path>
       <condition>
         <equals>
           <property>controls/engines/engine[0]/magnetos</property>
@@ -237,7 +237,7 @@
     
     <click> 
       <name>Magnetos-B</name>
-      <path>click.wav</path>
+      <path>Sounds/click.wav</path>
       <condition>
         <equals>
           <property>controls/engines/engine[0]/magnetos</property>
