@@ -81,7 +81,7 @@
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
-          <script>sportster.immat_dialog.toggle()</script>
+          <script>silence.immat_dialog.toggle()</script>
         </binding>
       </item>
     </menu>

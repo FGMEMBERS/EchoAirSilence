@@ -2,11 +2,35 @@
 
 <PropertyList>
   
-  <title>ASK 21 MI</title>
+  <title>EchoAir Silence</title>
   <line>______________________________________________</line> 
   <key>
     <name>d</name>
     <desc>Open/Close canopy</desc>
   </key>
+	<key>
+		<name>Ctrl-w</name>
+		<desc>Place winch 1000m in front of aircraft</desc>
+	</key>
+	<key>
+		<name>W</name>
+		<desc>Toggle winch hook</desc>
+	</key>
+	<key>
+		<name>w</name>
+		<desc>Increase winch speed</desc>
+	</key>
+	<key>
+		<name>Ctrl-o</name>
+		<desc>Find aircraft for aerotow</desc>
+	</key>
+	<key>
+		<name>o</name>
+		<desc>Lock aerotow hook</desc>
+	</key>
+	<key>
+		<name>O</name>
+		<desc>Open aerotow hook</desc>
+	</key>
   
 </PropertyList>

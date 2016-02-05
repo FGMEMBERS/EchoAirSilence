@@ -3,11 +3,6 @@
 <PropertyList>
   
   <path>on-offR.ac</path>
-    <nasal>
-    <load>
-set('/controls/flight/elevator-trim', 1)
-    </load>
-  </nasal>
   <animation>
     <!-- Objets opaques -->
     <object-name>base</object-name>
@@ -61,11 +56,6 @@ set('/controls/flight/elevator-trim', 1)
       <binding>
         <command>property-toggle</command>
         <property>sim/model/sound/click</property>
-      </binding>
-      <binding>
-	<command>property-adjust</command>
-        <property>controls/flight/elevator-trim</property>
-	<value>-0.5</value>
       </binding>
     </action>
   </animation>

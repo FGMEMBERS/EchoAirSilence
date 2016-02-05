@@ -3,15 +3,23 @@
 <PropertyList>
   
   <path>on-offR.ac</path>
-  
+
   <animation>
-    <!-- Objets opaques -->
+    <type>material</type>
     <object-name>base</object-name>
     <object-name>on-off</object-name>
-    
-    <!-- Objets transparents -->
+    <condition>
+<and>
+      <property>/controls/electric/battery-switch</property>
+<property>/controls/lighting/instrument-lights</property>
+</and>
+    </condition>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
   </animation>
-
   <animation>
     <object-name>on-off</object-name>
     <type>rotate</type>

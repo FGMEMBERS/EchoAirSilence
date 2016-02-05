@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <PropertyList>
- <!--<effect>
-    <inherits-from>Aircraft/EchoAirTraveller/Models/Effects/interior/c172p-interior</inherits-from>
-          <object-name>panel</object-name>
-          <object-name>base</object-name>
-          <object-name>switch</object-name>
-  </effect>-->
 <!--Uncatagorized-->
     <model>
     <path>Instruments/comp/comp.xml</path>
@@ -134,7 +128,7 @@
       <model>
     <path>Instruments/switch/battery.xml</path>
     <offsets>
-      <y-m>-0.40</y-m>
+      <y-m>-0.30</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -142,7 +136,7 @@
         <model>
     <path>Instruments/switch/avionics.xml</path>
     <offsets>
-      <y-m>-0.38</y-m>
+      <y-m>-0.28</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -150,7 +144,7 @@
    <model>
     <path>Instruments/switch/engmaster.xml</path>
     <offsets>
-      <y-m>-0.25</y-m>
+      <y-m>-0.15</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -158,7 +152,7 @@
    <model>
     <path>Instruments/switch/engout.xml</path>
     <offsets>
-      <y-m>-0.23</y-m>
+      <y-m>-0.13</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -166,7 +160,7 @@
     <model>
     <path>Instruments/switch/engstart.xml</path>
     <offsets>
-      <y-m>-0.21</y-m>
+      <y-m>-0.11</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -174,15 +168,7 @@
     <model>
     <path>Instruments/switch/strobe-lights.xml</path>
     <offsets>
-      <y-m>-0.34</y-m>
-      <z-m>-0.132</z-m>
-      <x-m>0.01</x-m>
-    </offsets>
-  </model>
-      <model>
-    <path>Instruments/switch/landing-lights.xml</path>
-    <offsets>
-      <y-m>-0.30</y-m>
+      <y-m>-0.24</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -190,7 +176,15 @@
      <model>
     <path>Instruments/switch/nav-lights.xml</path>
     <offsets>
-      <y-m>-0.32</y-m>
+      <y-m>-0.22</y-m>
+      <z-m>-0.132</z-m>
+      <x-m>0.01</x-m>
+    </offsets>
+  </model>
+      <model>
+    <path>Instruments/switch/landing-lights.xml</path>
+    <offsets>
+      <y-m>-0.20</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
@@ -198,7 +192,7 @@
    <model>
     <path>Instruments/switch/instr-lights.xml</path>
     <offsets>
-      <y-m>-0.28</y-m>
+      <y-m>-0.18</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>

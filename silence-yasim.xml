@@ -169,4 +169,20 @@
   <!-- Mass displacement -->
   <ballast x="3" y="0" z="-0.9" mass="100"/>
   
+<!-- hitch -->
+
+<hitch name="winch" x="-2.117" y="0" z="-0.269">
+	<tow length="51" weight-per-meter="0.1" elastic-constant="40000"  break-force="10000"/>
+	<!-- 4.5mm steel wire-->
+	<winch max-tow-length="1000" min-tow-length="1" initial-tow-length="1000" max-winch-speed="40" power="200" max-force="8000" />
+	<control-input axis="/controls/winch/place" control="PLACEWINCH"/>
+</hitch>
+
+<hitch name="aerotow" x="0" y="0" z="0" force-is-calculated-by-other="0">
+	<tow length="60" weight-per-meter="0.035" elastic-constant="9000" break-force="10000" mp-auto-connect-period="0.0"/>
+	<winch max-tow-length="1000" min-tow-length="60" initial-tow-length="60"/>
+	<control-input axis="/controls/aerotow/find-aircraft" control="FINDAITOW"/>
+
+</hitch>
+
 </airplane>

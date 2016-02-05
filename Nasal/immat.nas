@@ -19,8 +19,8 @@ var refresh_immat = func {
     }
 }
 
-var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/sportster/status/dialog",
-          "Aircraft/Sky-sportster/Dialogs/immat.xml");
+var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/silence/status/dialog",
+          "Aircraft/EchoAirSilence/Dialogs/immat.xml");
 
 setlistener("/sim/signals/fdm-initialized", func {
   if (props.globals.getNode("/sim/model/immat") == nil) {
