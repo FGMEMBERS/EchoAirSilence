@@ -176,6 +176,29 @@
 					<value type="bool">true</value>
 				</binding>
 			</key>
+			
+			<key n="80">
+				<name>P</name>
+				<desc>Unfold propeller</desc>
+      <binding>
+<!--block switch if engine is running-->
+<condition><not><property>/engines/engine/running</property></not></condition>
+        <command>nasal</command>
+        <script>doors.propeller.toggle();</script>
+      </binding>
+      <binding>
+<!--block switch if engine is running-->
+<condition><not><property>/engines/engine/running</property></not></condition>
+        <command>property-toggle</command>
+        <property>/instrumentation/eng-out</property>
+      </binding>
+      <binding>
+<!--block switch if engine is running-->
+<condition><not><property>/engines/engine/running</property></not></condition>
+        <command>property-toggle</command>
+        <property>sim/model/sound/click</property>
+      </binding>
+			</key>
 		</keyboard>
 	</input>
   <nasal>

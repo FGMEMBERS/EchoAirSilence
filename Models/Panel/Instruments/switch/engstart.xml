@@ -38,25 +38,6 @@
    <z>0</z>
   </axis>
   </animation>
-  <!--
-  <animation>
-    <type>pick</type>
-    <object-name>Circle</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-toggle</command>
-        <property>/controls/switches/starter</property>
-        <value>3</value>
-      </binding>
-      <binding>
-        <command>property-toggle</command>
-        <property>sim/model/sound/click</property>
-      </binding>
-    </action>
-  </animation>-->
     <animation>
     <type>pick</type>
     <object-name>Circle</object-name>
@@ -65,21 +46,25 @@
       <name>starter</name>
       <button>0</button>
       <binding>
+<condition><property>/instrumentation/eng-out</property></condition>
         <command>property-assign</command>
         <property>/controls/switches/starter</property>
         <value type="int">1</value>
       </binding>
       <binding>
+<condition><property>/instrumentation/eng-out</property></condition>
         <command>nasal</command>
         <script>controls.startEngine()</script>
       </binding>
       <mod-up>
         <binding>
+<condition><property>/instrumentation/eng-out</property></condition>
           <command>property-assign</command>
           <property>/controls/switches/starter</property>
           <value type="int">0</value>
         </binding>
         <binding>
+<condition><property>/instrumentation/eng-out</property></condition>
           <command>nasal</command>
           <script>props.setAll("/controls/engines/engine", "starter", 0)</script>
         </binding>

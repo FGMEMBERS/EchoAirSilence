@@ -199,15 +199,50 @@
   </model>
 
 
+<!--DETAILS-->
+<!--PITOT(COVER)-->
+<animation>
+<type>pick</type>
+    <object-name>pitotcover</object-name>
+    <object-name>pitotcoverin</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>  
+      <binding><condition>
+<property>sim/model/door-positions/crew/position-norm</property>
+</condition>
+        <command>property-toggle</command>
+        <property>/sim/model/pitot/coverfree</property>
+      </binding>
+    </action>
+</animation>
+<animation>
+<type>select</type>
+<object-name>pitotcover</object-name>
+<condition>
+<not>
+<property>/sim/model/pitot/coverfree</property>
+</not>
+</condition>
+</animation>
+<animation>
+<type>select</type>
+<object-name>pitotcoverin</object-name>
+<condition>
+<property>/sim/model/pitot/coverfree</property>
+</condition>
+</animation>
+
+
   
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
   <model>
     <path>Effects/ground/ground0.xml</path>
     <offsets>
-      <x-m> -3.20773 </x-m>
+      <x-m> -3.58451</x-m>
       <y-m>  0.00000 </y-m>
-      <z-m> -1.19684 </z-m>
+      <z-m> -1.15427 </z-m>
     </offsets>
   </model>
   
@@ -215,9 +250,9 @@
   <model>
     <path>Effects/ground/ground1.xml</path>
     <offsets>
-      <x-m> -1.00162 </x-m>
-      <y-m> -0.88250 </y-m>
-      <z-m> -1.19666 </z-m>
+      <x-m>-0.65419</x-m>
+      <y-m> -2.12322</y-m>
+      <z-m> -1.15793 </z-m>
     </offsets>
   </model>
   
@@ -225,9 +260,9 @@
   <model>
     <path>Effects/ground/ground2.xml</path>   
     <offsets>
-      <x-m> -1.00162 </x-m>
-      <y-m>  0.88250 </y-m>
-      <z-m> -1.19666 </z-m>
+      <x-m> -0.65419</x-m>
+      <y-m> 2.12322</y-m>
+      <z-m> -1.15793</z-m>
     </offsets>
   </model>
   
@@ -236,9 +271,17 @@
   <model>
     <path>lights/beacon.xml</path>
     <offsets>
-      <x-m> 3.58346 </x-m>
+      <x-m> -1.73745</x-m>
       <y-m> 0.00000 </y-m>
-      <z-m> 1.21087 </z-m>
+      <z-m> 0.40307 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>lights/beacon.xml</path>
+    <offsets>
+      <x-m> -2.46112</x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> -0.72692 </z-m>
     </offsets>
   </model>
   
@@ -246,9 +289,9 @@
     <name>LampeG1</name>
     <path>lights/RedLight.xml</path>
     <offsets>
-      <x-m> -1.71193 </x-m>
-      <y-m> -8.89904 </y-m>
-      <z-m>  0.45935 </z-m>
+      <x-m> 0.10224 </x-m>
+      <y-m> -10.00799 </y-m>
+      <z-m> 0.76836 </z-m>
     </offsets>
   </model>
   
@@ -256,9 +299,9 @@
     <name>LampeG2</name>
     <path>lights/StrobeLight.xml</path>
     <offsets>
-      <x-m> -1.68988 </x-m>
-      <y-m> -8.89904 </y-m>
-      <z-m>  0.45935 </z-m>
+      <x-m>0.10224</x-m>
+      <y-m>-10.00799</y-m>
+      <z-m>  0.76836 </z-m>
     </offsets>
   </model>
   
@@ -266,9 +309,9 @@
     <name>LampeD1</name>
     <path>lights/GreenLight.xml</path>
     <offsets>
-      <x-m> -1.71193 </x-m>
-      <y-m>  8.89904 </y-m>
-      <z-m>  0.45935 </z-m>
+      <x-m>0.10224 </x-m>
+      <y-m> 10.00799 </y-m>
+      <z-m>  0.76836 </z-m>
     </offsets>
   </model>
   
@@ -276,9 +319,9 @@
     <name>LampeD2</name>
     <path>lights/StrobeLight.xml</path>
     <offsets>
-      <x-m> -1.68988 </x-m>
-      <y-m>  8.89904 </y-m>
-      <z-m>  0.45935 </z-m>
+      <x-m> 0.10224 </x-m>
+      <y-m> 10.00799 </y-m>
+      <z-m>  0.76836</z-m>
     </offsets>
   </model>
   
