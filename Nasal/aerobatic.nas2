@@ -1,0 +1,24 @@
+#Aerobatic mode
+setlistener("/sim/signals/fdm-initialized", func {
+     settimer(update_aerobatic, 2);
+    });
+
+
+var update_aerobatic = func{
+var elevator = getprop("controls/flight/elevator");
+var aileron = getprop("controls/flight/aileron");
+var rudder = getprop("controls/flight/rudder");
+var aerobatic = getprop("controls/flight/aerobatic-switch");
+if (aerobatic){
+setprop("/controls/flight/elevator_out", elevator * 5);
+setprop("/controls/flight/aileron_out", aileron * 5);
+setprop("/controls/flight/rudder_out", rudder * 5);
+}else{
+setprop("/controls/flight/elevator_out", elevator);
+setprop("/controls/flight/aileron_out", aileron);
+setprop("/controls/flight/rudder_out", rudder);
+}
+     settimer(update_aerobatic, 0);
+}
+
+

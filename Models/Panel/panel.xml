@@ -128,13 +128,29 @@
       <model>
     <path>Instruments/switch/battery.xml</path>
     <offsets>
-      <y-m>-0.30</y-m>
+      <y-m>-0.32</y-m>
       <z-m>-0.132</z-m>
       <x-m>0.01</x-m>
     </offsets>
   </model>
         <model>
     <path>Instruments/switch/avionics.xml</path>
+    <offsets>
+      <y-m>-0.3</y-m>
+      <z-m>-0.132</z-m>
+      <x-m>0.01</x-m>
+    </offsets>
+  </model>
+        <model>
+    <path>Instruments/switch/smoke.xml</path>
+    <offsets>
+      <y-m>-0.26</y-m>
+      <z-m>-0.132</z-m>
+      <x-m>0.01</x-m>
+    </offsets>
+  </model>
+        <model>
+    <path>Instruments/switch/aerobatic.xml</path>
     <offsets>
       <y-m>-0.28</y-m>
       <z-m>-0.132</z-m>

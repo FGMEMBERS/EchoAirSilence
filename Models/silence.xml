@@ -142,6 +142,32 @@
       <blue-prop>specular/blue</blue-prop>
     </specular>
   </animation>
+<!--Smoke; from Cap10C; thanks to Patten!-->
+<!--Left wing-->
+  <model>
+    <path>Effects/Smoke/smoke.xml</path>
+    <offsets>
+      <x-m> 0.31261 </x-m>
+      <y-m> -9.94047</y-m>
+      <z-m> 0.9011</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--Right wing-->
+  <model>
+    <path>Effects/Smoke/smoke.xml</path>
+    <offsets>
+      <x-m>0.31261 </x-m>
+      <y-m> 9.94047</y-m>
+      <z-m> 0.9011 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
