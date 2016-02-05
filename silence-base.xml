@@ -69,12 +69,11 @@
     <doors>
       <file>Nasal/doors.nas</file>
     </doors>
-    <sportster>
+    <silence>
       <file>Nasal/liveries.nas</file>
       <file>Nasal/light.nas</file>
       <file>Nasal/immat.nas</file>
-      <!--<file>Nasal/yawstring.nas</file>-->
-    </sportster>
+    </silence>
   </nasal>
   
 </PropertyList>

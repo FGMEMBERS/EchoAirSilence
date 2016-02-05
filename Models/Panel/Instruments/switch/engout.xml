@@ -39,24 +39,28 @@
       <z>  0 </z>
     </axis>
   </animation>
-  <!--not working!!-->
   <animation>
     <type>pick</type>
     <object-name>on-off</object-name>
-
     <visible>true</visible>
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
+<!--block switch if engine is running-->
+<condition><not><property>/engines/engine/running</property></not></condition>
         <command>nasal</command>
         <script>doors.propeller.toggle();</script>
       </binding>
       <binding>
+<!--block switch if engine is running-->
+<condition><not><property>/engines/engine/running</property></not></condition>
         <command>property-toggle</command>
         <property>/instrumentation/eng-out</property>
       </binding>
       <binding>
+<!--block switch if engine is running-->
+<condition><not><property>/engines/engine/running</property></not></condition>
         <command>property-toggle</command>
         <property>sim/model/sound/click</property>
       </binding>

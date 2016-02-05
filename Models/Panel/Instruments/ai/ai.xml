@@ -19,7 +19,7 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Diamond-Da40/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>../../../Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   

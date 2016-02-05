@@ -7,7 +7,7 @@
     
     <crank>
       <name>engstart</name>
-      <path>Sounds/engstart.wav</path>
+      <path>engstart.wav</path>
       <property>/engines/engine[0]/cranking</property>
       <volume>
         <offset>0.4</offset>
@@ -17,7 +17,7 @@
     <crank>
       <name>crank</name>
       <mode>looped</mode>
-      <path>Sounds/cranking.wav</path>
+      <path>cranking.wav</path>
       <condition>
         <property>/engines/engine[0]/cranking</property>
         <not>
@@ -31,7 +31,7 @@
     
     <crank>
       <name>cough</name>
-      <path>Sounds/coughing.wav</path>
+      <path>coughing.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume>
         <offset>0.3</offset>
@@ -41,7 +41,7 @@
     <engine>
       <name>engine</name>
       <mode>looped</mode>
-      <path>Sounds/wasp.wav</path>
+      <path>wasp.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume>
         <property>/engines/engine[0]/mp-osi</property>
@@ -72,7 +72,7 @@
     <propeller>
       <name>propeller</name>
       <mode>looped</mode>
-      <path>Sounds/turboprop1.wav</path>
+      <path>turboprop1.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume>
         <property>/orientation/alpha-deg</property>
@@ -96,7 +96,7 @@
     <tyre-rumble>
       <name>tyre-rumble</name>
       <mode>looped</mode>
-      <path>Aircraft/ASK21-MI/Sounds/ground_roll3.wav</path>
+      <path>ground_roll3.wav</path>
       <condition>
         <or>
           <property>/gear/gear[0]/wow</property>
@@ -134,69 +134,11 @@
         <offset>1.25</offset>
       </pitch>
     </wind>
-    
-    <variometer-up>
-      <name>variometer-up</name>
-      <mode>looped</mode>
-      <path>Aircraft/ASK21-MI/Models/Interior/Panel/Instruments/vario/vario.wav</path>
-      <condition>
-        <and>
-          <greater-than>
-            <property>instrumentation/ilec-sc7/audio</property>
-            <value>0</value>
-          </greater-than>
-          <greater-than>
-            <property>instrumentation/ilec-sc7/te-reading-mps</property>
-            <value>0.01</value>
-          </greater-than>
-        </and>
-      </condition>
-      <pitch>
-        <property>instrumentation/ilec-sc7/te-reading-mps</property> 
-        <factor>0.246</factor>
-        <offset>1.0</offset>
-      </pitch>
-      <volume>
-        <property>instrumentation/ilec-sc7/volume</property>
-        <max>1</max>
-      </volume>
-    </variometer-up>
-    
-    <variometer-down>
-      <name>variometer-down</name>
-      <mode>looped</mode>
-      <path>Aircraft/ASK21-MI/Models/Interior/Panel/Instruments/vario/vario2.wav</path>
-      <condition>
-        <and>
-          <equals>
-            <property>instrumentation/ilec-sc7/audio</property>
-            <value>2</value>
-          </equals>
-          <greater-than>
-            <property>instrumentation/ilec-sc7/te-reading-mps</property>
-            <value>-10.66</value>
-          </greater-than>
-          <less-than>
-            <property>instrumentation/ilec-sc7/te-reading-mps</property>
-            <value>-0.01</value>
-          </less-than>
-        </and>
-      </condition>
-      <pitch>
-        <property>instrumentation/ilec-sc7/te-reading-neg</property>
-        <factor>-0.05</factor>
-        <offset>1.0</offset>
-      </pitch>
-      <volume>
-        <property>instrumentation/ilec-sc7/volume</property>
-        <max>1</max>
-      </volume>  
-    </variometer-down>
-    
+   
     <winch_tow>
       <name>winch_tow</name>
       <mode>looped</mode>
-      <path>Aircraft/ASK21-MI/Sounds/winch_tow.wav</path>
+      <path>winch_tow.wav</path>
       <condition>
         <not>
           <property>sim/hitches/winch/open</property>
@@ -212,7 +154,7 @@
     <whoosh-positive>
       <name>whoosh-positive</name>
       <mode>once</mode>
-      <path>Aircraft/ASK21-MI/Sounds/whoosh.wav</path>
+      <path>whoosh.wav</path>
       <condition>
         <greater-than>
           <property>orientation/pitch-rate-degps</property>
@@ -229,7 +171,7 @@
     <whoosh-negative>
       <name>whoosh-negative</name>
       <mode>once</mode>
-      <path>Aircraft/ASK21-MI/Sounds/whoosh.wav</path>
+      <path>whoosh.wav</path>
       <condition>
         <less-than>
           <property>orientation/pitch-rate-degps</property>
@@ -246,7 +188,7 @@
     <cable_release>
       <name>cable_release</name>
       <mode>once</mode>
-      <path>Aircraft/ASK21-MI/Sounds/winch_release.wav</path>
+      <path>winch_release.wav</path>
       <condition>
         <property>sim/hitches/winch/open</property>
       </condition>
@@ -254,7 +196,7 @@
     
     <click> 
       <name>Magnetos-off</name>
-      <path>Sounds/click.wav</path>
+      <path>click.wav</path>
       <condition>
         <not>
           <property>controls/engines/engine[0]/magnetos</property>
@@ -267,7 +209,7 @@
     
     <click> 
       <name>Magnetos-R</name>
-      <path>Sounds/click.wav</path>
+      <path>click.wav</path>
       <condition>
         <equals>
           <property>controls/engines/engine[0]/magnetos</property>
@@ -281,7 +223,7 @@
     
     <click> 
       <name>Magnetos-L</name>
-      <path>Sounds/click.wav</path>
+      <path>click.wav</path>
       <condition>
         <equals>
           <property>controls/engines/engine[0]/magnetos</property>
@@ -295,7 +237,7 @@
     
     <click> 
       <name>Magnetos-B</name>
-      <path>Sounds/click.wav</path>
+      <path>click.wav</path>
       <condition>
         <equals>
           <property>controls/engines/engine[0]/magnetos</property>
