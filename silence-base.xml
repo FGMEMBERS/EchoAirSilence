@@ -211,6 +211,9 @@
       <file>Nasal/immat.nas</file>
       <file>Nasal/aerobatic.nas</file>
     </silence>
+	<tcas>
+	<file>Models/Panel/Instruments/TCAS/tcas.nas</file>
+	</tcas>
   </nasal>
   
 </PropertyList>

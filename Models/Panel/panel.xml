@@ -107,6 +107,14 @@
 <pitch-deg>-45</pitch-deg>
     </offsets>
   </model>
+     <model>
+    <path>Instruments/TCAS/tcas.xml</path>
+    <offsets>
+      <y-m>-0.0</y-m>
+      <x-m>0.05</x-m>
+      <z-m>0.015</z-m>
+    </offsets>
+  </model>
 <!--Communication -->
       <model>
     <path>Aircraft/Instruments-3d/kt76a/kt76a.xml</path>

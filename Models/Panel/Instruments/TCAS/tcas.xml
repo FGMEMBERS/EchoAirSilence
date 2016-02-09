@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>tcas.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>scale</object-name>
+    <object-name>fond2</object-name>
+    <object-name>cache</object-name>
+    <object-name>float</object-name>
+    <object-name>marque</object-name>
+    <object-name>bouton</object-name>
+    <object-name>face</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>../../../Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>fond2</object-name>
+    <object-name>scale</object-name>
+    <object-name>float</object-name>
+    <object-name>marque</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>other1</object-name>
+    <object-name>other2</object-name>
+    <object-name>other3</object-name>
+    <object-name>other4</object-name>
+    <object-name>other5</object-name>
+    <object-name>other6</object-name>
+    <object-name>other7</object-name>
+    <object-name>other8</object-name>
+    <object-name>other9</object-name>
+    <object-name>other10</object-name>
+    <property>/orientation/heading-deg</property>
+    <factor>1</factor>
+    <axis>
+      <x> 1 </x>
+    </axis>
+  </animation>
+#If noone is online, nothing has to be shown ;)
+
+  <animation>
+    <type>select</type>
+    <object-name>other1</object-name>
+    <object-name>other2</object-name>
+    <object-name>other3</object-name>
+    <object-name>other4</object-name>
+    <object-name>other5</object-name>
+    <object-name>other6</object-name>
+    <object-name>other7</object-name>
+    <object-name>other8</object-name>
+    <object-name>other9</object-name>
+    <object-name>other10</object-name>
+<condition><not><equals>
+    <property>/ai/models/num-players</property>
+<value>0</value>
+</equals></not>
+</condition>
+  </animation>
+
+#First mp pilot
+  <animation>
+    <type>select</type>
+    <object-name>other1</object-name>
+<condition>
+    <property>/instrumentation/tcas/mp/z</property>
+</condition>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>other1</object-name>
+<action><binding><type>property-toggle</type><property>/instrumentation/tcas/mp/selected</property></binding></action>
+  </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>other1</object-name>
+    <property>/instrumentation/tcas/mp/z</property>
+    <factor>-0.0002</factor>
+    <axis>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>other1</object-name>
+    <property>/instrumentation/tcas/mp/y</property>
+    <factor>-0.0002</factor>
+    <axis>
+      <y> 1 </y>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>other1</object-name>
+    <property>/ai/models/multiplayer/orientation/heading-deg</property>
+    <factor>-0.0002</factor>
+    <min-m> -0.1 </min-m>
+    <max-m>  0.1 </max-m>
+    <axis>
+      <y> 1 </y>
+    </axis>
+  </animation>
+
+#Second mp pilot
+  <animation>
+    <type>select</type>
+    <object-name>other2</object-name>
+<condition>
+    <property>/instrumentation/tcas/mp1/z</property>
+</condition>
+  </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>other2</object-name>
+    <property>/instrumentation/tcas/mp1/z</property>
+    <factor>-0.0002</factor>
+    <axis>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  <animation>
+    <type>translate</type>
+    <object-name>other2</object-name>
+    <property>/instrumentation/tcas/mp1/y</property>
+    <factor>-0.0002</factor>
+    <axis>
+      <y> 1 </y>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>other2</object-name>
+    <property>/ai/models/multiplayer[1]/orientation/heading-deg</property>
+    <factor>-0.0002</factor>
+    <min-m> -0.1 </min-m>
+    <max-m>  0.1 </max-m>
+    <axis>
+      <y> 1 </y>
+    </axis>
+  </animation>
+</PropertyList>
