@@ -154,7 +154,7 @@
   </gear>
 
   <!--Tail skid-->
-  <gear x="3.615" y="0" z="-0.43444"
+  <gear x="-4.60875" y="0" z="-0.19898"
         skid="1"
         compression="0.0"
         spring="1.8"
@@ -170,7 +170,7 @@
   
 <!-- hitch -->
 
-<hitch name="winch" x="-2.117" y="0" z="-0.269">
+<hitch name="winch" x="3.71945" y="0" z="-0.269">
 	<tow length="51" weight-per-meter="0.1" elastic-constant="40000"  break-force="10000"/>
 	<!-- 4.5mm steel wire-->
 	<winch max-tow-length="1000" min-tow-length="1" initial-tow-length="1000" max-winch-speed="40" power="200" max-force="8000" />

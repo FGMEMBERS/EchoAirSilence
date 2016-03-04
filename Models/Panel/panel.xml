@@ -10,7 +10,15 @@
     </offsets>
   </model>
     <model>
-    <path>MFD/mfd.xml</path>
+    <path>Instruments/gearwinch/gearwinch.xml</path>
+    <offsets>
+      <y-m>-0.35</y-m>
+      <x-m>0.01</x-m>
+      <z-m>-0.075</z-m>
+    </offsets>
+  </model>
+    <model>
+    <path>MFD/ea7000.xml</path>
     <offsets>
       <y-m>0.07</y-m>
       <x-m>-0.00</x-m>
@@ -107,14 +115,14 @@
 <pitch-deg>-45</pitch-deg>
     </offsets>
   </model>
-     <model>
+ <!--    <model>
     <path>Instruments/TCAS/tcas.xml</path>
     <offsets>
       <y-m>-0.0</y-m>
       <x-m>0.05</x-m>
       <z-m>0.015</z-m>
     </offsets>
-  </model>
+  </model>-->
 <!--Communication -->
       <model>
     <path>Aircraft/Instruments-3d/kt76a/kt76a.xml</path>
@@ -125,7 +133,7 @@
     </offsets>
   </model>
       <model>
-    <path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
+    <path>Instruments/GNC255A/gnc255a.xml</path>
     <offsets>
       <y-m>0.07</y-m>
       <x-m>0.01</x-m>

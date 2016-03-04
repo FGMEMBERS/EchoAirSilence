@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<PropertyList>
+<path>ea7000.ac</path>
+<animation>
+<type>select</type>
+<object-name>off</object-name>
+<condition><not>
+<property>/controls/electric/battery-switch</property></not>
+</condition>
+</animation>
+</PropertyList>
+

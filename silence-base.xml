@@ -86,8 +86,29 @@
 			</aerotow>
 		</hitches>
   </sim>
-  
-  
+  <instrumentation>
+<gnc255a><comm-mode>1</comm-mode></gnc255a>
+<nav-radio>
+  <name>nav</name>
+  <number>0</number>
+</nav-radio>
+
+<nav-radio>
+  <name>nav</name>
+  <number>1</number>
+</nav-radio>
+
+<transponder>
+  <name>transponder</name>
+  <number>0</number>
+  <mode-c-altitude>/instrumentation/encoder/mode-c-alt-ft</mode-c-altitude>
+</transponder>
+</instrumentation>
+  <instrumentation><efis><inputs>
+			<tfc>1</tfc>
+			<arpt>1</arpt>
+			<sta>1</sta>
+	</inputs></efis></instrumentation>
   <controls include="Systems/controls.xml"/>
   	<input>
 		<keyboard>
@@ -202,6 +223,9 @@
 		</keyboard>
 	</input>
   <nasal>
+<ea7000>
+      <file>Models/Panel/MFD/ea7000.nas</file>
+</ea7000>
     <doors>
       <file>Nasal/doors.nas</file>
     </doors>

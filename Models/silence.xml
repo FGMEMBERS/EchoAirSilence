@@ -6,7 +6,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Sky-sportster/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/EchoAirSilence/Models/Liveries", 10);
 
       var self = cmdarg();
 
@@ -29,51 +29,18 @@
 
   <animation>
     <object-name>fuselage</object-name>
-    <object-name>porteA</object-name>
-    <object-name>porteG</object-name>
-    <object-name>porteD</object-name>
-    <object-name>ailes</object-name>
-    <object-name>ailesG1</object-name>
-    <object-name>ailesG2</object-name>
-    <object-name>ailesG3</object-name>
-    <object-name>ailesD1</object-name>
-    <object-name>ailesD2</object-name>
-    <object-name>ailesD3</object-name>
-    <object-name>aileronG1</object-name>
-    <object-name>aileronG2</object-name>
-    <object-name>aileronG3</object-name>
-    <object-name>aileronD1</object-name>
-    <object-name>aileronD2</object-name>
-    <object-name>aileronD3</object-name>
-    <object-name>spoilerG</object-name>
-    <object-name>spoilerD</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>direction</object-name>
-    <object-name>profondeurG</object-name>
-    <object-name>profondeurD</object-name>
-    <object-name>canopy</object-name>
-    <object-name>bol</object-name>
-    <object-name>supportlampesG</object-name>
-    <object-name>supportlampesD</object-name>
-    
-    <object-name>trous</object-name>
-    <object-name>trousG1</object-name>
-    <object-name>trousG2</object-name>
-    <object-name>trousG3</object-name>
-    <object-name>trousD1</object-name>
-    <object-name>trousD2</object-name>
-    <object-name>trousD3</object-name>
-    <object-name>echappe</object-name>
-    <object-name>pale1</object-name>
-    <object-name>pale2</object-name>
-    <object-name>pale3</object-name>
-    <object-name>roueA</object-name>
-    <object-name>axeGH</object-name>
-    <object-name>axeGB</object-name>
-    <object-name>roueG</object-name>
-    <object-name>axeDH</object-name>
-    <object-name>axeDB</object-name>
-    <object-name>roueD</object-name>
+    <object-name>wing</object-name>
+    <object-name>hstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+    <object-name>spinner</object-name>
+    <object-name>prop11</object-name>
+    <object-name>prop12</object-name>
+    <object-name>prop21</object-name>
+    <object-name>prop22</object-name>
+    <object-name>prop31</object-name>
+    <object-name>prop32</object-name>
     
     <!-- Transparence -->
     <object-name>vitres</object-name>
@@ -87,52 +54,18 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>porteA</object-name>
-    <object-name>porteG</object-name>
-    <object-name>porteD</object-name>
-    <object-name>ailes</object-name>
-    <object-name>ailesG1</object-name>
-    <object-name>ailesG2</object-name>
-    <object-name>ailesG3</object-name>
-    <object-name>ailesD1</object-name>
-    <object-name>ailesD2</object-name>
-    <object-name>ailesD3</object-name>
-    <object-name>aileronG1</object-name>
-    <object-name>aileronG2</object-name>
-    <object-name>aileronG3</object-name>
-    <object-name>aileronD1</object-name>
-    <object-name>aileronD2</object-name>
-    <object-name>aileronD3</object-name>
-    <object-name>spoilerG</object-name>
-    <object-name>spoilerD</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>direction</object-name>
-    <object-name>profondeurG</object-name>
-    <object-name>profondeurD</object-name>
-    <object-name>canopy</object-name>
-    <object-name>bol</object-name>
-    <object-name>supportlampesG</object-name>
-    <object-name>supportlampesD</object-name>
-    
-    <object-name>trous</object-name>
-    <object-name>trousG1</object-name>
-    <object-name>trousG2</object-name>
-    <object-name>trousG3</object-name>
-    <object-name>trousD1</object-name>
-    <object-name>trousD2</object-name>
-    <object-name>trousD3</object-name>
-    <object-name>echappe</object-name>
-    <object-name>pale1</object-name>
-    <object-name>pale2</object-name>
-    <object-name>pale3</object-name>
-    <object-name>roueA</object-name>
-    <object-name>axeGH</object-name>
-    <object-name>axeGB</object-name>
-    <object-name>roueG</object-name>
-    <object-name>axeDH</object-name>
-    <object-name>axeDB</object-name>
-    <object-name>roueD</object-name>
-    
+    <object-name>wing</object-name>
+    <object-name>hstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+    <object-name>spinner</object-name>
+    <object-name>prop11</object-name>
+    <object-name>prop12</object-name>
+    <object-name>prop21</object-name>
+    <object-name>prop22</object-name>
+    <object-name>prop31</object-name>
+    <object-name>prop32</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -172,32 +105,18 @@
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
-    <object-name>porteA</object-name>
-    <object-name>porteG</object-name>
-    <object-name>porteD</object-name>
-    <object-name>ailes</object-name>
-    <object-name>ailesG1</object-name>
-    <object-name>ailesG2</object-name>
-    <object-name>ailesG3</object-name>
-    <object-name>ailesD1</object-name>
-    <object-name>ailesD2</object-name>
-    <object-name>ailesD3</object-name>
-    <object-name>aileronG1</object-name>
-    <object-name>aileronG2</object-name>
-    <object-name>aileronG3</object-name>
-    <object-name>aileronD1</object-name>
-    <object-name>aileronD2</object-name>
-    <object-name>aileronD3</object-name>
-    <object-name>spoilerG</object-name>
-    <object-name>spoilerD</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>direction</object-name>
-    <object-name>profondeurG</object-name>
-    <object-name>profondeurD</object-name>
-    <object-name>canopy</object-name>
-    <object-name>bol</object-name>
-    <object-name>supportlampesG</object-name>
-    <object-name>supportlampesD</object-name>
+    <object-name>wing</object-name>
+    <object-name>hstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+    <object-name>spinner</object-name>
+    <object-name>prop11</object-name>
+    <object-name>prop12</object-name>
+    <object-name>prop21</object-name>
+    <object-name>prop22</object-name>
+    <object-name>prop31</object-name>
+    <object-name>prop32</object-name>
   </effect>
 
   <!-- working for Rembrandt -->
