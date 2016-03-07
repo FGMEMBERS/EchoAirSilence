@@ -18,7 +18,26 @@
      <cockpit type="int"> 2 </cockpit>
      <model type="int">   4 </model>
     </rating>
-    
+    <weight n="0">
+        <name>Pilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>100</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Copilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+        <name>Baggage</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
   </sim>
 
 </PropertyList>

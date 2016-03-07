@@ -161,6 +161,12 @@
         damp="0.03" 
         on-solid="1">
   </gear>
+  <!-- Pilot -->
+  <weight x="2.21881" y="0.2489" z="-0.33532" mass-prop="sim/weight[0]/weight-lb"/>
+  <!-- Copilot -->
+  <weight x="2.21881" y="0.2489" z="-0.33532" mass-prop="sim/weight[1]/weight-lb"/>
+  <!-- Baggage -->
+  <weight x="-1.24436" y="-0.0" z="-0.30727" mass-prop="sim/weight[2]/weight-lb"/>
   
   <!-- Tank 26 liters -->
   <tank x="1.8" y="0" z="-0.4" capacity="40.20"/>
