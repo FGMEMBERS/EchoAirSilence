@@ -211,7 +211,7 @@ modified for Garmin GNC255A by D-ECHO, March 2016
     <type>translate</type>
     <object-name>swap</object-name>
     <property alias="../../params/comm-frq-swp"/>
-    <factor>-0.002</factor>
+    <factor>-0.001</factor>
     <axis>
       <x>1</x>
       <y>0</y>
@@ -625,7 +625,7 @@ modified for Garmin GNC255A by D-ECHO, March 2016
       <binding>
         <command>property-adjust</command>
         <property alias="../../../../params/comm-volume"/>
-        <factor>-0.1</factor>
+        <factor>0.1</factor>
         <min>0.0</min>
         <max>1.0</max>
         <wrap>false</wrap>
@@ -786,7 +786,7 @@ modified for Garmin GNC255A by D-ECHO, March 2016
       <binding>
         <command>property-adjust</command>
         <property alias="../../../../params/nav-volume"/>
-        <factor>-0.1</factor>
+        <factor>0.1</factor>
         <min>0.0</min>
         <max>1.0</max>
         <wrap>false</wrap>

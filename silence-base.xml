@@ -87,6 +87,13 @@
 		</hitches>
   </sim>
   <instrumentation>
+<efis>
+	<inputs>
+		<tfc>1</tfc>
+		<arpt>1</arpt>
+		<sta>1</sta>
+	</inputs>
+</efis>
 <gnc255a><comm-mode>1</comm-mode></gnc255a>
 <nav-radio>
   <name>nav</name>
@@ -104,32 +111,9 @@
   <mode-c-altitude>/instrumentation/encoder/mode-c-alt-ft</mode-c-altitude>
 </transponder>
 </instrumentation>
-  <instrumentation><efis><inputs>
-			<tfc>1</tfc>
-			<arpt>1</arpt>
-			<sta>1</sta>
-	</inputs></efis></instrumentation>
   <controls include="Systems/controls.xml"/>
   	<input>
 		<keyboard>
-                      <!--
-			<key n="23">
-			<name>Ctrl-w</name>
-			<desc>Place Winch 1000m in front of aircraft</desc>
-			<binding>
-				<command>property-assign</command>
-				<property>/controls/winch/place</property>
-				<value type="bool">true</value>
-			</binding>
-			<mod-up>
-				<binding>
-					<command>property-assign</command>
-					<property>/controls/winch/place</property>
-					<value type="bool">false</value>
-				</binding>
-			</mod-up>
-			</key>
-                       -->
 			<key n="23">
 			  <name>Ctrl-w</name>
 			  <desc>Place Winch and hook in</desc>

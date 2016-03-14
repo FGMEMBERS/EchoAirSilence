@@ -171,16 +171,11 @@
     <object-name>prop32</object-name>
   </effect>
 
-  <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Effects/Glass/glass</inherits-from>
-    <object-name>frontwindow</object-name>
-  </effect>
   
   <!-- working for Rembrandt -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>vitres</object-name>
+    <object-name>frontwindow</object-name>
     <object-name>lampetrsR</object-name>
     <object-name>lampetrsV</object-name>
     <object-name>lampetrsC</object-name>
@@ -1297,6 +1292,83 @@
       <z> 0 </z>
     </axis>
   </animation>
+<!--INTERIOR-->
+<!--Throttle-->
+ <animation>
+    <type>slider</type>
+        <object-name>throttlelever</object-name>
+    <drag-direction>vertical</drag-direction>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/throttle</property>
+        <factor>0.05</factor>
+        <min>0</min>
+        <max>1</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Throttle: %3d%%</label>
+        <measure-text>Throttle: 100%</measure-text>
+        <tooltip-id>throttle</tooltip-id>
+        <mapping>percent</mapping>
+        <property>controls/engines/engine[0]/throttle</property>
+      </binding>
+    </hovered>
+  </animation>
+<animation>
+<type>rotate</type>
+<object-name>throttlelever</object-name>
+<property>/controls/engines/engine/throttle</property>
+<factor>-90</factor>
+<axis><y>1</y></axis>
+<center>
+<x-m>-2.58173</x-m>
+<y-m>0.0</y-m>
+<z-m>-0.30684</z-m>
+</center>
+</animation>
+<!--Flaps lever-->
+ <animation>
+    <type>slider</type>
+        <object-name>flapslever</object-name>
+    <drag-direction>vertical</drag-direction>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/spoilers</property>
+        <factor>-0.05</factor>
+        <min>0</min>
+        <max>1</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Spoiler: %3d%%</label>
+        <measure-text>Spoiler: 100%</measure-text>
+        <tooltip-id>spoiler</tooltip-id>
+        <mapping>percent</mapping>
+        <property>controls/flight/spoilers</property>
+      </binding>
+    </hovered>
+  </animation>
+<animation>
+<type>rotate</type>
+<object-name>flapslever</object-name>
+<property>/surface-positions/speedbrake-pos-norm</property>
+<factor>60</factor>
+<axis><y>1</y></axis>
+<center>
+<x-m>-2.22012</x-m>
+<y-m>0.0</y-m>
+<z-m>-0.39907</z-m>
+</center>
+</animation>
 <!--PANEL-->
   <model>
     <path>Panel/panel.xml</path>
